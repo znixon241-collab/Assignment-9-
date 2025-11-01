@@ -1,1 +1,35 @@
-/* Add any custom CSS stylings you want here */
+
+:root {
+  --radius: 0.75rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#status {
+  min-height: 1.25rem; 
+}
+
+#gif-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+#fetch-gif-btn,
+#clear-btn {
+  border-radius: calc(var(--radius) + 0.25rem);
+}
+
+button, input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand { font-size: 1.05rem; }
+}
